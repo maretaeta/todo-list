@@ -1,0 +1,25 @@
+import React from "react";
+
+function SearchTodo() {
+  return (
+    <div className="pt-8 p-5 pb-5 ">
+      <form class="flex items-center">
+        <div class="relative w-full">
+          <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none w-9 rounded-sm ">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <input
+            type="text"
+            id="simple-search"
+            class="bg-[#F8F8F8]  text-gray-900 text-sm rounded-md block sm:w-72 w-full h-8 lg:w-[92vw] md:w-[88vw] pl-10  "
+
+            placeholder="Search Todo"
+            required
+          /> 
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default SearchTodo;
