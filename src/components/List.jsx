@@ -4,6 +4,7 @@ import UpdateForm from "../components/UpdateForm";
 import ToDo from "../components/ToDo"
 import DeleteTodo from "../components/DeleteTodo"
 import Calendar from "./Calendar";
+import SearchTodo from "./SearchTodo";
 
 function List(){
 const initialState = JSON.parse(localStorage.getItem("toDo")) || []
@@ -72,8 +73,9 @@ const updateTask = () => {
 };
 
 return (
+  
     <div className="p-3">
-        <h3 className="text-2xl lg:text-4xl font-semibold pl-3 pb-6">
+        <h3 className="text-2xl lg:text-4xl font-semibold pl-3 pb-6 pt-5">
           Binar ToDo List
         </h3>
 

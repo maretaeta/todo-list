@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
+
 
 function SearchTodo() {
+  const [search, setSearch] = useState("");
   return (
     <div className="pt-8 p-5 pb-5 ">
       <form class="flex items-center">
@@ -10,11 +12,12 @@ function SearchTodo() {
           </div>
           <input
             type="text"
-            id="simple-search"
             class="bg-[#F8F8F8]  text-gray-900 text-sm rounded-md block sm:w-72 w-full h-8 lg:w-[92vw] md:w-[88vw] pl-10  "
 
             placeholder="Search Todo"
-            required
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+
           /> 
         </div>
       </form>

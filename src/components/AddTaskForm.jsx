@@ -1,7 +1,7 @@
 const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
     return(
       <>
-        <div className="flex">
+        <div className="flex p-3">
           <input
           value={newTask}
             onChange={(e) => setNewTask(e.target.value)}

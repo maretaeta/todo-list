@@ -12,9 +12,10 @@ const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
       .map( (task, index) => {
         return(
           <React.Fragment key={task.id} >
+          
            <div className='border rounded m-[15px] overflow-hidden mx-auto'> 
               <div className= { task.status ? 'done, line-through' : '' }>
-                <div className='flex justify-between p-4 cursor-pointer'>
+                <div className='flex justify-between p-4 cursor-pointer '>
                 <span className="font-xs mx-2 font-semibold">{task.title}</span>
               
                 <div className="flex gap-4">

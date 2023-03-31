@@ -6,7 +6,7 @@ const DeleteTodo = ({clearList}) => {
          <button
          onClick={clearList}
             type="submit"
-            class=" ml-2 text-sm text-center text-white bg-red-600 rounded-sm w-44 md:w-60 lg:w-64 h-8"
+            class=" ml-2 text-sm text-center text-white bg-red-600 rounded-sm w-44 md:w-60 lg:w-64 h-9"
           >
             Delete All Task
           </button>
@@ -14,9 +14,9 @@ const DeleteTodo = ({clearList}) => {
           <button
           
             type="submit"
-            class=" ml-2 text-sm text-center text-white bg-red-600 rounded-sm w-44 md:w-60 lg:w-64 h-8"
+            class=" ml-2 text-sm text-center text-white bg-red-600 rounded-sm w-44 md:w-60 lg:w-64 h-9"
           >
-            Delete Done Task
+            All Task
           </button>
     </div>
   )
