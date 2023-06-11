@@ -1,23 +1,22 @@
 import { useState } from "react";
 import logo from "../assets/binar.png";
 import control from "../assets/control.png";
-import Chart_fill from "../assets/home.png"
-import Plus from "../assets/plus.png"
-import calendar from "../assets/filter.png"
-import Chart from "../assets/todo.png"
-
+import Chart_fill from "../assets/home.png";
+import Plus from "../assets/plus.png";
+import calendar from "../assets/filter.png";
+import Chart from "../assets/todo.png";
 
 const Home = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
     { id: 1, title: "Dashboard", src: Chart_fill },
-    { id: 2, title: "Add New Todo", src: Plus},
+    { id: 2, title: "Add New Todo", src: Plus },
     { id: 3, title: "Filter ", src: calendar, gap: true },
     { id: 4, title: "Analytics", src: Chart },
   ];
 
   return (
-    <div className="flex h-[180vh] bg-[#F3F4FB]">
+    <div className="flex h-[180vh] bg-[#F3F4FB] w-full">
       <div
         className={` ${
           open ? "w-52 h-full" : "w-20 lg:w-24 h-full "
@@ -46,9 +45,12 @@ const Home = () => {
                 index === 0 && "bg-light-white"
               } `}
             >
-              
               <img className="w-4" src={`${Menu.src}`} />
-              <span className={`${!open && "hidden"} origin-left duration-200 text-black`}>
+              <span
+                className={`${
+                  !open && "hidden"
+                } origin-left duration-200 text-black`}
+              >
                 {Menu.title}
               </span>
             </li>
