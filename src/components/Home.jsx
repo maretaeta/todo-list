@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import logo from "../assets/binar.png";
 import control from "../assets/control.png";

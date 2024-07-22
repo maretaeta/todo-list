@@ -4,7 +4,7 @@ import UpdateForm from "../components/UpdateForm";
 import ToDo from "../components/ToDo"
 import DeleteTodo from "../components/DeleteTodo"
 import Calendar from "./Calendar";
-import SearchTodo from "./SearchTodo";
+//import SearchTodo from "./SearchTodo";
 
 function List(){
 const initialState = JSON.parse(localStorage.getItem("toDo")) || []
